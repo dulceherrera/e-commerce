@@ -1,0 +1,31 @@
+.card-logeado-container{
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logeado-header{
+  font-size: 4rem;
+}
+
+.logeado-name{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logeado-btn{
+  width: 5rem;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #f85555;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+
+.logeado-btn:hover{
+  filter: brightness(1.2);
+}

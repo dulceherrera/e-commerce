@@ -1,0 +1,165 @@
+.homepage-container aside{
+  display: none;
+}
+
+
+.products-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-list li{
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.search-input{
+  position: relative;
+  margin: 0 10px 30px;
+}
+
+.form-input{
+  display: flex;
+  margin-bottom: 15px;
+  max-width: 900px;
+}
+
+.homepage-input{
+  flex: 1;
+  padding: 5px 15px;
+  font-size: 1rem;
+  border: 1px solid #DCD9D9;
+}
+
+.homepage-input::placeholder{
+  color: #CBCBCB;
+}
+
+.search-btn-icon{
+  width: 45px;
+  height: 45px;
+  background: #F55555;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.filter-btn{
+  display: block;
+  margin: 0 0 10px auto;
+  background: transparent;
+  font-size: 0.9rem;
+  color: #C7C7C7;
+  display: flex;
+}
+
+.filter-btn i{
+  font-size: 1.3rem;
+  margin-right: 11px;
+}
+
+.filters-modal{
+  background: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: auto;
+  width: 300px;
+  padding: 10px 13px 50px;
+  transform: translateX(100%);
+  transform-origin: top right;
+  transition: 0.7s all ease;
+  z-index: 9;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.filters-modal.open{
+  transform: translateX(0);
+}
+
+.filters-modal .close{
+  display: block;
+  margin: 0 0 15px auto;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+
+h5{
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media(min-width: 576px){
+  .products-list li {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px){
+  .homepage-container{
+    display: flex;
+  }
+
+  .homepage-container .main-container, .homepage-container aside{
+    padding-top: 50px;
+  }
+
+  .homepage-container aside{
+    display: block;
+    padding: 20px;
+    padding-top: 50px;
+    width: 300px;
+  }
+
+   .homepage-container aside .modal-fixed{
+    position: fixed;
+  }
+
+  .homepage-container section{
+    max-width: none;
+    flex: 1;
+  }
+
+  .search-input .filter-btn{
+    display: none;
+  }
+}
+
+@media (min-width: 1200px){
+  .products-list li{
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 1300px){
+  .products-list li{
+    padding: 30px;
+  }
+
+  .homepage-container section{
+    padding: 40px;
+  }
+
+  .search-input{
+    margin: 0 30px 60px;
+  }
+
+  .search-input .form-input{
+    margin: 0 auto;
+  }
+
+  .search-input .form-input .search-btn-icon{
+    width: 100px;
+  }
+}

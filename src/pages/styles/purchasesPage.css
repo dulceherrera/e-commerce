@@ -1,0 +1,39 @@
+.purchases{
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.purchases h1{
+  margin-bottom: 30px;
+}
+
+.purchases .purchases-product-list{
+  padding: 30px 10px 10px;
+}
+
+.purchases .no-purchases-yet{
+  color: #A9A9A9;
+  margin-top: 40px;
+}
+
+.purchases .no-purchases-yet a{
+  color: #6EADFF;
+  text-decoration: none;
+}
+
+@media (min-width: 768px){
+  .purchases{
+    padding: 40px 20px 80px;
+  }
+}
+
+@media (min-width: 992px){
+  .purchases .main-container{
+    max-width: 900px;
+  }
+
+  .purchases h1{
+    margin-bottom: 50px;
+  }
+}

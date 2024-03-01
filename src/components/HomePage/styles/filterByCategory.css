@@ -1,0 +1,47 @@
+.filter-dropdown{
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: 1s all;
+  max-height: 300px;
+}
+
+.closed {
+  max-height: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  font-weight: 600;
+  padding: 1px;
+  border-bottom: 2px solid #DCD9D9;
+}
+
+.header i {
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: 1s all;
+}
+
+.filter-dropdown.closed .header i {
+  transform: (rotate(-180deg));
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.category-filter{
+  list-style: none;
+}
+
+.category-filter li{
+  margin: 0 0 10px 20px;
+}
+
+button{
+  background: none;
+}

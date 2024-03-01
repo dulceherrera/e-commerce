@@ -1,0 +1,32 @@
+.similar-items > h2 {
+  font-size: 1.2rem;
+  color: #F55555;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.similar-items ul li{
+  padding: 10px;
+}
+
+@media (min-width: 520px) {
+  .list-similar{
+    display: flex;
+  }
+
+  .similar-items ul li{
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px){
+  .similar-items ul li{
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1200px){
+  .similar-items ul li{
+    width: calc(100% / 3);
+  }
+}
